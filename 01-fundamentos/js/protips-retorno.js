@@ -46,12 +46,12 @@ const tony = {
 //     console.log("trajes", personaje.trajes);
 // };
 
-const imprimrPropiedades = personaje => {
-    console.log("nombre", personaje.nombre);
-    console.log("codeName", personaje.codeName);
-    console.log("vivo", personaje.vivo);
-    console.log("edad", personaje.edad);
-    console.log("trajes", personaje.trajes);
+const imprimrPropiedades = ({ nombre, codeName, vivo, edad = 15, trajes }) => {
+    console.log({ nombre });
+    console.log({ codeName });
+    console.log({ vivo });
+    console.log({ edad });
+    console.log({ trajes });
 };
 
 imprimrPropiedades(tony);
